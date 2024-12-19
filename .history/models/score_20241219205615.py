@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship
 from database import Base
 
 class Score(Base):
-    __tablename__ = 'scores'
+    _tablename_ = 'scores'
     
     id = Column(Integer, primary_key=True)
     player_id = Column(Integer, ForeignKey('players.id'))
@@ -13,5 +13,5 @@ class Score(Base):
     player = relationship("Player", back_populates="scores")
     game_history = relationship("GameHistory", back_populates="score")
 
-    def __repr__(self):
+    def __repr_(self):
         return f"<Score(player_id={self.player_id}, game_id={self.game_id}, score={self.score})>"

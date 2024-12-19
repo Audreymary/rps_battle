@@ -12,5 +12,5 @@ class Player(Base):
     # Relationship to GameHistory (a player can have multiple game histories)
     games = relationship("GameHistory", back_populates="player")
 
-    def __repr__(self):
+    def __repr_(self):
         return f"<Player(name={self.name}, score={self.score})>"

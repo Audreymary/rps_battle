@@ -14,5 +14,5 @@ class GameHistory(Base):
     # Relationship back to Player (You can access the player object from GameHistory)
     player = relationship("Player", back_populates="games")
 
-    def __repr__(self):
+    def __repr_(self):
         return f"<GameHistory(player_choice={self.player_choice}, computer_choice={self.computer_choice}, result={self.result})>"

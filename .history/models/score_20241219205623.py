@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship
 from database import Base
 
 class Score(Base):
-    __tablename__ = 'scores'
+    __tablename_ = 'scores'
     
     id = Column(Integer, primary_key=True)
     player_id = Column(Integer, ForeignKey('players.id'))

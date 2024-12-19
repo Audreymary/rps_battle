@@ -128,5 +128,5 @@ def main():
         else:
             print("Invalid choice, please enter a number between 1 and 4.")
 
-if __name__ == "__main__":
+if __name_ == "_main_":
     main()
