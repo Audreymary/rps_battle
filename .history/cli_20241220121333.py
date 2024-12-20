@@ -16,7 +16,7 @@ def determine_winner(player_choice, computer_choice):
         return "win"
     else:
         return "lose"
-#play game
+#
 def play_game():
     """Function to play a round of the game."""
     player_name = input("Enter your name: ")
@@ -57,7 +57,7 @@ def play_game():
     session.commit()
 
     session.close()
-#game history
+
 def display_game_history(player_name):
     """Display the game history for a specific player."""
     session = Session()
@@ -77,7 +77,7 @@ def display_game_history(player_name):
         print(f"No games played yet for {player_name}.")
 
     session.close()
-#player
+
 def display_all_players():
     """Display all players in the database."""
     session = Session()
@@ -92,7 +92,7 @@ def display_all_players():
         print("No players found in the database.")
 
     session.close()
-#delete players
+
 def delete_player():
     """Function to delete a player and their game history."""
     session = Session()
@@ -111,7 +111,7 @@ def delete_player():
 
     print(f"Player '{player_name}' and their game history have been deleted.")
     session.close()
-#update players
+
 def update_player():
     """Function to update player's name or score."""
     session = Session()
@@ -143,7 +143,7 @@ def update_player():
 
     session.commit()
     session.close()
-#main function
+
 def main():
     """Main function to handle CLI commands."""
     

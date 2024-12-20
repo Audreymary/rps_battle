@@ -111,7 +111,7 @@ def delete_player():
 
     print(f"Player '{player_name}' and their game history have been deleted.")
     session.close()
-#update players
+#
 def update_player():
     """Function to update player's name or score."""
     session = Session()
@@ -143,7 +143,7 @@ def update_player():
 
     session.commit()
     session.close()
-#main function
+
 def main():
     """Main function to handle CLI commands."""
     

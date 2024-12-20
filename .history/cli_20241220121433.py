@@ -143,7 +143,7 @@ def update_player():
 
     session.commit()
     session.close()
-#main function
+
 def main():
     """Main function to handle CLI commands."""
     
